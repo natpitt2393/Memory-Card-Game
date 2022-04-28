@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(155, 73, 73) ;
+}
+
+img {
+    width: 100px;
+}
+
+memory-game {
+    border: 2px solid black;
+}
+
+.front-face
+.back-face {
+    border: 2px solid pink;
+}
