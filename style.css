@@ -13,11 +13,23 @@ img {
     width: 100px;
 }
 
-memory-game {
+.memory-game {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid greenyellow;
+}
+
+.memory-card {
+    width: 25%;
+    height: 33.33%;
+    position: relative;
     border: 2px solid black;
 }
 
 .front-face
 .back-face {
-    border: 2px solid pink;
+    position: absolute;
+    border: 2px solid purple;
 }
