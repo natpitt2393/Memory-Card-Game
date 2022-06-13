@@ -1,10 +1,30 @@
 console.log('I am working!')
 
 const cards = document.querySelectorAll('.memory-card');
+const timerEl = document.getElementById('time');
+let timeCount = cards.length * 5;
+let timerId;
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+
+
+function startGame() {
+    timerId = setInterval(runClock, 1000);
+}
+
+startGame();
+
+
+function runClock() {
+    timeCount--;
+    timerEl.textContent = timeCount;
+    if(timeCount <= 0) {
+        clearInterval(timerId);
+    }
+}
+
 
 
 function flipCard() {
